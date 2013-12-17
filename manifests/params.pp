@@ -15,6 +15,7 @@ class puppet::params {
   $puppet_server                    = 'aserver.puppetlabs.lan'
   $puppet_storeconfigs_password     = 'password'
   $modulepath                       = "/etc/puppet/modules"
+  $enable_etckeeper                 = false
   $storeconfigs_dbadapter           = 'mysql'
   $storeconfigs_dbuser              = 'puppet'
   $storeconfigs_dbpassword          = 'password'

@@ -17,6 +17,8 @@
 #   [*puppet_server*]         - The server configuration value in puppet.conf
 #   [*modulepath*]            - The modulepath configuration value used in
 #                               puppet.conf
+#   [*enable_etckeeper*]      - Boolean determining whether etckeeper should be
+#                               used
 #   [*puppet_conf*]           - The path to the puppet.conf file
 #   [*puppet_logdir*]         - The path to the puppet log
 #   [*puppet_vardir*]         - The path to the puppet vardir
@@ -84,6 +86,7 @@ class puppet (
   $confdir                  = $puppet::params::confdir,
   $manifest                 = $puppet::params::manifest,
   $modulepath               = $puppet::params::modulepath,
+  $enable_etckeeper         = $puppet::params::enable_etckeeper,
   $puppet_conf              = $puppet::params::puppet_conf,
   $puppet_logdir            = $puppet::params::puppet_logdir,
   $puppet_vardir            = $puppet::params::puppet_vardir,
