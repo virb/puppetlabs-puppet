@@ -39,7 +39,6 @@
 #
 #  Class['concat']
 #  Class['stdlib']
-#  Class['concat::setup']
 #  Class['mysql'] (conditionally)
 #
 # Sample Usage:
@@ -82,8 +81,6 @@ class puppet::master (
   $version = 'present'
 
 ) inherits puppet::params {
-
-  include concat::setup
 
   File {
     require => Package[$puppet_master_package],
