@@ -71,6 +71,7 @@ class puppet::master (
   $certname = $::fqdn,
   $autosign = false,
   $dashboard_port = 3000,
+  $puppet_server = $::puppet::params::puppet_server,
   $puppet_passenger = false,
   $puppet_site = $::puppet::params::puppet_site,
   $puppet_docroot = $::puppet::params::puppet_docroot,

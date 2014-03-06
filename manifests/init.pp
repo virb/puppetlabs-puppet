@@ -147,6 +147,7 @@ class puppet (
     class {'puppet::master':
       version                   => $version,
       confdir                   => $confdir,
+      puppet_server             => $puppet_server,
       puppet_passenger          => $puppet_passenger,
       puppet_site               => $puppet_site,
       puppet_passenger_port     => $puppet_passenger_port,
