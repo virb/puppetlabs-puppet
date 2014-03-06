@@ -74,7 +74,6 @@
 #  Class['ruby']
 #  Class['concat']
 #  Class['stdlib']
-#  Class['concat::setup']
 #  Class['activerecord']
 #
 # Sample Usage:
